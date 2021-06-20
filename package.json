@@ -1,0 +1,26 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.6",
+    "berries": "git+ssh://git@github.com:dome9/berries.git",
+    "postcss": "^8.3.5",
+    "postcss-cssstats": "^1.0.0",
+    "postcss-deadcss": "^1.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^8.1.0",
+    "postcss-nesting": "^8.0.1",
+    "tailwindcss": "^2.2.2",
+    "vite": "^2.3.7",
+    "vue-router": "^4.0.8"
+  }
+}
