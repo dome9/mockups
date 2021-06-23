@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-1 items-center justify-center">
-		<div class="theme theme-light flex flex-col relative overflow-hidden shadow-xl shadow-strong">
+		<div class="theme theme-light flex flex-col flex-1 max-w-4xl relative overflow-hidden shadow-xl shadow-strong">
 			<div class="flex-0 border-b px-4 py-2 theme theme-dark-primary font-light uppercase"
 				>KUBERNETES ONBOARDING</div
 			>
@@ -77,62 +77,30 @@
 					</div>
 				</div>
 				<div class="flex flex-1 flex-col max-w-3xl">
-					<div class="flex-1 p-6 bg-canvas">
+					<div class="flex-1 p-6 bg-canvas overflow-auto" style="max-height: 500px; min-height: 500px">
 						<div class="text-2xl">Onboarding Summary</div>
-						<div class="bg-info-lightest p-2 text-xs flex items-center mt-3">
-							<div class="flex items-center justify-center">
-								<svg width="16" height="16" viewBox="0 0 16 16">
-									<path
-										d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0ZM8,13H8a1,1,0,0,1-1-1V7A1,1,0,0,1,8,6H8A1,1,0,0,1,9,7v5A1,1,0,0,1,8,13ZM9,4A1,1,0,1,1,8,3,1,1,0,0,1,9,4Z"
-									/>
-								</svg>
-							</div>
-							<div class="flex-1 ml-2">
-								To validate the onboarding and test the connectivity, install the agent on the cluster.
-							</div>
-						</div>
-						<div class="grid grid-cols-5 gap-6 my-8">
-							<div class="font-semibold">Claster:</div>
-							<div class="col-span-4">My_Cluster</div>
 
-							<div class="font-semibold">Deployment:</div>
-							<div class="col-span-4">
-								<div class="">
-									<div class="flex">
-										<div class="bg-content border flex-1 self-center">
-											<div class="h-1 w-4/6 bg-danger"></div>
-										</div>
-										<div class="flex justify-end ml-2"> 42 / 63 </div>
+						<div class="grid grid-cols-8 gap-3 my-8">
+							<div class="font-semibold col-span-2 mr-4">Claster:</div>
+							<div class="col-span-6">My_Cluster</div>
+							<div class="font-semibold col-span-2 mr-4">Kubernetes Version:</div>
+							<div class="col-span-6">v1.18.16-eks-7737de</div>
+
+							<div class="font-semibold col-span-2 mr-4">Features:</div>
+							<div class="col-span-6">Posture Management, Image Assurance.</div>
+							<div class="font-semibold col-span-2 mr-4">Nodes:</div>
+							<div class="col-span-6">42</div>
+							<div class="font-semibold col-span-2 mr-4">Agents Status:</div>
+
+							<div class="col-span-6">
+								<div class="flex">
+									<div class="mb-1 flex-1">Initialization </div>
+									42 out of 63
+								</div>
+								<div class="flex">
+									<div class="bg-content border flex-1">
+										<div class="h-1 w-4/6 bg-info-darkest"></div>
 									</div>
-								</div>
-							</div>
-
-							<div class="font-semibold">Status:</div>
-
-							<div class="col-span-4">
-								<div class="flex flex-1">
-									<svg
-										version="1.1"
-										id="Layer_1"
-										x="0px"
-										y="0px"
-										height="16"
-										width="16"
-										viewBox="0 0 16 16"
-										style="enable-background: new 0 0 16 16"
-										xml:space="preserve"
-									>
-										<path fill="red" d="M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8S12.4,0,8,0z" />
-										<path
-										fill="white"
-											d="M11.7,10.3c0.4,0.4,0.4,1,0,1.4c0,0,0,0,0,0c-0.4,0.4-1,0.4-1.4,0c0,0,0,0,0,0L8,9.4l-2.3,2.3 	c-0.4,0.4-1,0.4-1.4,0c0,0,0,0,0,0c-0.4-0.4-0.4-1,0-1.4c0,0,0,0,0,0L6.6,8L4.3,5.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0L8,6.6l2.3-2.3 	c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L9.4,8L11.7,10.3z"
-										/>
-									</svg>
-									<div class="ml-1">Error</div>
-								</div>
-								<div class="bg-danger-lightest p-3 mt-2">
-
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio possimus aliquid nobis vero earum quas incidunt quisquam ab quod enim ipsa minima adipisci, odit eveniet officia, fugiat, tempora ipsam distinctio. <a class="text-info" href="text-info">See sk165514</a>
 								</div>
 							</div>
 							<!--  -->
@@ -146,10 +114,8 @@
 									border border-weaker
 									text-weakest
 									justify-center
-									hover:bg-content
-									hover:border
-									active:bg-content-dark
-									active:border-weakest
+									hover:bg-content hover:border
+									active:bg-content-dark active:border-weakest
 									focus:outline-none
 									px-3
 									py-1
@@ -162,10 +128,8 @@
 									theme theme-dark
 									justify-center
 									bg-primary
-									hover:bg-hover
-									hover:border-stronger
-									active:bg-primary-dark
-									active:border-weakest
+									hover:bg-hover hover:border-stronger
+									active:bg-primary-dark active:border-weakest
 									border
 									focus:outline-none
 									px-3

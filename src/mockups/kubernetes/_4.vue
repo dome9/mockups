@@ -79,7 +79,7 @@
 				<div class="flex flex-1 flex-col max-w-3xl">
 					<div class="flex-1 p-6 bg-canvas overflow-auto" style="max-height: 500px; min-height: 500px">
 						<div class="text-2xl">Onboarding Summary</div>
-					
+
 						<div class="grid grid-cols-8 gap-3 my-8">
 							<div class="font-semibold col-span-2 mr-4">Claster:</div>
 							<div class="col-span-6">My_Cluster</div>
@@ -90,28 +90,26 @@
 							<div class="font-semibold col-span-2 mr-4">Features:</div>
 							<div class="col-span-6">Posture Management, Image Assurance.</div>
 							<div class="font-semibold col-span-2 mr-4">Nodes:</div>
-							<div class="col-span-6">42 out of 63</div>
+							<div class="col-span-6">63 out of 63</div>
 							<div class="font-semibold col-span-2 mr-4">Agents Status:</div>
 
 							<div class="col-span-6">
 								<div class="flex flex-1">
+									
 									<svg
 										id="Layer_1"
 										class="w-4 h-4 self-center"
-										fill="var(--color-danger)"
-										viewBox="0 0 32 32"
+										fill="var(--color-success)"
+										data-name="Layer 1"
+										viewBox="0 0 16 16"
 									>
 										
 										<path
 											class="cls-1"
-											d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.71,22.29a1,1,0,0,1,0,1.42,1,1,0,0,1-1.42,0L16,17.41l-6.29,6.3a1,1,0,0,1-1.42,0,1,1,0,0,1,0-1.42L14.59,16,8.29,9.71A1,1,0,0,1,9.71,8.29L16,14.59l6.29-6.3a1,1,0,0,1,1.42,1.42L17.41,16Z"
+											d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0Zm4.27,5.64-5,6A1,1,0,0,1,6.5,12h0a1,1,0,0,1-.78-.45l-2-3a1,1,0,0,1,1.66-1.1L6.59,9.33l4.14-5a1,1,0,1,1,1.54,1.28Z"
 										/>
 									</svg>
-									<div class="ml-1 self-center">Error</div>
-									<!-- <button class="border bg-content px-2 -py-1 ml-auto text-xs">VALIDATE</button> -->
-								</div>
-								<div class="bg-danger-lightest p-3 text-xs mt-2">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas porro odit quia, nostrum aut obcaecati autem, voluptate laboriosam, reiciendis libero ratione numquam voluptatum consequatur dignissimos nam quibusdam placeat perferendis sint.
+									<div class="ml-1 self-center">Success</div>
 								</div>
 							</div>
 							<!--  -->

@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-1 items-center justify-center">
-		<div class="theme theme-light flex flex-col relative overflow-hidden shadow-xl shadow-strong">
+		<div class="theme theme-light flex flex-col flex-1 max-w-4xl relative overflow-hidden shadow-xl shadow-strong" >
 			<div class="flex-0 border-b px-4 py-2 theme theme-dark-primary font-light uppercase"
 				>KUBERNETES ONBOARDING</div
 			>
@@ -77,7 +77,7 @@
 					</div>
 				</div>
 				<div class="flex flex-1 flex-col max-w-3xl">
-					<div class="flex-1 p-6 bg-canvas">
+					<div class="flex-1 p-6 bg-canvas overflow-auto" style="max-height: 500px; min-height: 500px">
 						<div class="text-2xl">Onboarding Summary</div>
 						<div class="bg-info-lightest p-2 text-xs flex items-center mt-3">
 							<div class="flex items-center justify-center">
@@ -91,25 +91,23 @@
 								To validate the onboarding and test the connectivity, install the agent on the cluster.
 							</div>
 						</div>
-						<div class="grid grid-cols-5 gap-6 my-8">
-							<div class="font-semibold">Claster:</div>
-							<div class="col-span-4">My_Cluster</div>
+						<div class="grid grid-cols-8 gap-3 my-8">
+							<div class="col-span-2 font-semibold mr-4">Claster:</div>
+							<div class="col-span-6">My_Cluster</div>
 
-							<div class="font-semibold">Deployment:</div>
-							<div class="col-span-4">
-								<div class="">
-									<div class="flex">
-										<div class="bg-content border flex-1 self-center">
-											<div class="h-1 w-4/6 bg-info-darkest"></div>
-										</div>
-										<div class="flex justify-end ml-2"> 30 / 63 </div>
-									</div>
-								</div>
-							</div>
+							<div  class="font-semibold mr-4 col-span-2">Kubernetes Version:</div>
+							<div class="col-span-6">v1.18.16-eks-7737de</div>
 
-							<div class="font-semibold">Status:</div>
+							<div class=" font-semibold mr-4 col-span-2">Features:</div>
+							<div class="col-span-6">Posture Management, Image Assurance.</div>
 
-							<div class="col-span-4">
+							<div class=" font-semibold mr-4 col-span-2">Nodes:</div>
+							<div class="col-span-6">NA</div>
+
+							<div class=" font-semibold mr-4 col-span-2">Agents Status:</div>
+							
+
+							<div class="col-span-6">
 								<div class="flex flex-1">
 									<svg
 										class="w-4 h-4"
@@ -131,15 +129,11 @@
 									<div class="font-semibold mb-1"> The agent has not initated communication</div>
 									<ul class="list-disc ml-4">
 										<li>Make sure agent is installed</li>
-										<!-- <li
-											>Once the agent is installed please click on the "VALIDATE" button
-											again.</li
-										> -->
 										<li>Check agent connectivity</li>
+										<li>If the agent has already been installed please check the agent connectivity.
+											<a class="text-info" href="">See sk165514</a>
+										</li>
 									</ul>
-									<!-- The agent has not initated communication. Once the agent is installed please click
-									on the "VALIDATE" button again. If the agent has already been installed please check
-									the agent connectivity. See <a href="text-info">sk165514</a> -->
 								</div>
 							</div>
 							<!--  -->
@@ -153,10 +147,8 @@
 									border border-weaker
 									text-weakest
 									justify-center
-									hover:bg-content
-									hover:border
-									active:bg-content-dark
-									active:border-weakest
+									hover:bg-content hover:border
+									active:bg-content-dark active:border-weakest
 									focus:outline-none
 									px-3
 									py-1
@@ -169,10 +161,8 @@
 									theme theme-dark
 									justify-center
 									bg-primary
-									hover:bg-hover
-									hover:border-stronger
-									active:bg-primary-dark
-									active:border-weakest
+									hover:bg-hover hover:border-stronger
+									active:bg-primary-dark active:border-weakest
 									border
 									focus:outline-none
 									px-3
