@@ -87,14 +87,17 @@
 							<div class="col-span-6">v1.18.16-eks-7737de</div>
 
 							<div class="font-semibold col-span-2 mr-4">Features:</div>
-							<div class="col-span-6">Posture Management, Image Assurance.</div>
+							<div class="col-span-6">
+								<div class="inline-block bg-primary-lightest px-2 ml-1 rounded-md" style="color: white">Posture Management</div>
+								<div class="inline-block bg-primary-lightest px-2 ml-1 rounded-md" style="color: white">Image Assurance</div>
+							</div>
 							<div class="font-semibold col-span-2 mr-4">Nodes:</div>
-							<div class="col-span-6">42</div>
-							<div class="font-semibold col-span-2 mr-4">Agents Status:</div>
+							<div class="col-span-6">20</div>
+							<div class="font-semibold col-span-2 mr-4">Agents:</div>
 
 							<div class="col-span-6">
 								<div class="flex">
-									<div class="mb-1 flex-1">Initialization </div>
+									<div class="mb-1 flex-1"> </div>
 									42 out of 63
 								</div>
 								<div class="flex">
@@ -103,6 +106,8 @@
 									</div>
 								</div>
 							</div>
+							<div class="font-semibold col-span-2 mr-4">Status:</div>
+							<div class="col-span-6">Initialization</div>
 							<!--  -->
 						</div>
 					</div>

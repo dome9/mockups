@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-1 items-center justify-center">
-		<div class="theme theme-light flex flex-col flex-1 max-w-4xl relative overflow-hidden shadow-xl shadow-strong">
+		<div class="theme theme-light flex flex-col flex-1 max-w-4xl relative overflow-hidden shadow-xl shadow-strong" >
 			<div class="flex-0 border-b px-4 py-2 theme theme-dark-primary font-light uppercase"
 				>KUBERNETES ONBOARDING</div
 			>
@@ -79,39 +79,69 @@
 				<div class="flex flex-1 flex-col max-w-3xl">
 					<div class="flex-1 p-6 bg-canvas overflow-auto" style="max-height: 500px; min-height: 500px">
 						<div class="text-2xl">Onboarding Summary</div>
-					
+						<div class="bg-info-lightest p-2 text-xs flex items-center mt-3">
+							<div class="flex items-center justify-center">
+								<svg width="16" height="16" viewBox="0 0 16 16">
+									<path
+										d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0ZM8,13H8a1,1,0,0,1-1-1V7A1,1,0,0,1,8,6H8A1,1,0,0,1,9,7v5A1,1,0,0,1,8,13ZM9,4A1,1,0,1,1,8,3,1,1,0,0,1,9,4Z"
+									/>
+								</svg>
+							</div>
+							<div class="flex-1 ml-2">
+								To validate the onboarding and test the connectivity, install the agent on the cluster.
+							</div>
+						</div>
 						<div class="grid grid-cols-8 gap-3 my-8">
-							<div class="font-semibold col-span-2 mr-4">Claster:</div>
+							<div class="col-span-2 font-semibold mr-4">Claster:</div>
 							<div class="col-span-6">My_Cluster</div>
 
-							<div class="font-semibold col-span-2 mr-4">Kubernetes Version:</div>
-							<div class="col-span-6">v1.18.16-eks-7737de</div>
+							<div  class="font-semibold mr-4 col-span-2">Kubernetes Version:</div>
+							<div class="col-span-6">N/A</div>
 
-							<div class="font-semibold col-span-2 mr-4">Features:</div>
-							<div class="col-span-6">Posture Management, Image Assurance.</div>
-							<div class="font-semibold col-span-2 mr-4">Nodes:</div>
-							<div class="col-span-6">42 out of 63</div>
-							<div class="font-semibold col-span-2 mr-4">Agents Status:</div>
+							<div class=" font-semibold mr-4 col-span-2">Features:</div>
+							<div class="col-span-6"><div class="inline-block bg-primary-lightest px-2 ml-1 rounded-md" style="color: white"
+									>Posture Management</div
+								>
+								<div class="inline-block bg-primary-lightest px-2 ml-1 rounded-md" style="color: white"
+									>Image Assurance</div
+								></div>
+
+							<div class=" font-semibold mr-4 col-span-2">Nodes:</div>
+							<div class="col-span-6">N/A</div>
+
+							<div class="font-semibold col-span-2 mr-4">Agents:</div>
+							<div class="col-span-6">N/A</div>
+
+							<div class=" font-semibold mr-4 col-span-2">Status:</div>
+							
 
 							<div class="col-span-6">
 								<div class="flex flex-1">
 									<svg
+										class="w-4 h-4"
+										fill="var(--color-warning)"
 										id="Layer_1"
-										class="w-4 h-4 self-center"
-										fill="var(--color-danger)"
-										viewBox="0 0 32 32"
+										data-name="Layer 1"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
 									>
-										
 										<path
 											class="cls-1"
-											d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.71,22.29a1,1,0,0,1,0,1.42,1,1,0,0,1-1.42,0L16,17.41l-6.29,6.3a1,1,0,0,1-1.42,0,1,1,0,0,1,0-1.42L14.59,16,8.29,9.71A1,1,0,0,1,9.71,8.29L16,14.59l6.29-6.3a1,1,0,0,1,1.42,1.42L17.41,16Z"
+											d="M15.84,13.85,9.25.78A1.38,1.38,0,0,0,7.4.14a1.35,1.35,0,0,0-.65.64L.16,13.85a1.53,1.53,0,0,0,0,1.44A1.41,1.41,0,0,0,1.41,16H14.59a1.41,1.41,0,0,0,1.21-.71A1.53,1.53,0,0,0,15.84,13.85ZM7,4.83A.93.93,0,0,1,8,4a.93.93,0,0,1,1,.83V8.17A.93.93,0,0,1,8,9a.93.93,0,0,1-1-.83ZM8,14a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,8,14Z"
 										/>
 									</svg>
-									<div class="ml-1 self-center">Error</div>
-									<!-- <button class="border bg-content px-2 -py-1 ml-auto text-xs">VALIDATE</button> -->
+									<div class="ml-1">Pending</div>
+									<button class="border bg-content px-2 -py-1 ml-auto text-xs">VALIDATE</button>
 								</div>
-								<div class="bg-danger-lightest p-3 text-xs mt-2">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas porro odit quia, nostrum aut obcaecati autem, voluptate laboriosam, reiciendis libero ratione numquam voluptatum consequatur dignissimos nam quibusdam placeat perferendis sint.
+								<div class="bg-warning-lightest p-3 text-xs mt-2">
+									<div class="font-semibold mb-1"> The agent has not initated communication</div>
+									<ul class="list-disc ml-4">
+										<li>Make sure agent is installed</li>
+										<li>Check agent connectivity</li>
+										<li>If the agent has already been installed please check the agent connectivity.
+											<a class="text-info" href="">See sk165514</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 							<!--  -->

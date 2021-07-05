@@ -90,8 +90,10 @@
 							<div class="font-semibold col-span-2 mr-4">Features:</div>
 							<div class="col-span-6">Posture Management, Image Assurance.</div>
 							<div class="font-semibold col-span-2 mr-4">Nodes:</div>
+							<div class="col-span-6">20</div>
+							<div class="font-semibold col-span-2 mr-4">Agents:</div>
 							<div class="col-span-6">63 out of 63</div>
-							<div class="font-semibold col-span-2 mr-4">Agents Status:</div>
+							<div class="font-semibold col-span-2 mr-4">Status:</div>
 
 							<div class="col-span-6">
 								<div class="flex flex-1">
