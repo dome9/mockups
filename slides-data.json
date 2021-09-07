@@ -1,0 +1,17 @@
+{
+    "projects": [
+        {
+            "id": "SXHCQ",
+            "name": "Performance Test",
+            "domain": "http://localhost:2000",
+            "stories": [
+                {
+                    "id": "VMRLYVYOSO",
+                    "name": "New Story",
+                    "slides": [
+                    ]
+                }
+            ]
+        }
+    ]
+}
