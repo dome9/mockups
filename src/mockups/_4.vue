@@ -158,7 +158,7 @@
 </template>
 
 <script setup>
-import { defineProps, reactive } from 'vue';
+
 
 defineProps({
 	msg: String,

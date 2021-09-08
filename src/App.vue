@@ -4,30 +4,24 @@
 	</div>
 </template>
 
+<style lang="scss">
+@import '../node_modules/ag-grid-community/dist/styles/ag-grid.css';
+@import '../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css';
+</style>
+
 <script lang="ts">
-
 import { defineComponent } from 'vue';
-// import { applyPolyfills, defineCustomElements } from '@dome9/components/loader';
 
-// applyPolyfills().then(() => {
-//   defineCustomElements();
-// });
 
 export default defineComponent({
 	name: 'App',
-	// productionTip: false,
-	// ignoredElements: [/test-\w*/],
-	components: {},
 	data() {
 		return {
-			theme: '',
+			columnDefs: null,
+			rowData: null,
 		};
 	},
-	mounted() {
-		if (localStorage.theme) {
-			this.theme = localStorage.theme;
-		}
-	},
+
 	watch: {
 		theme(newTheme) {
 			localStorage.theme = newTheme;

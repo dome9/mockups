@@ -1,0 +1,27 @@
+{
+    "projects": [
+        {
+            "id": "UYTUYTYTR",
+            "name": "Vue Test",
+            "domain": "http://localhost:3000",
+            "stories": [
+                {
+                    "id": "VUTRSXGZJL",
+                    "name": "1878; 1638; 1895",
+                    "slides": [
+                        {
+                            "id": "LVECTTKXSF",
+                            "name": "This is a slide name!!!!!"
+                        },
+                        {
+                            "id": "BQGGMLHHJX"
+                        },
+                        {
+                            "id": "NEILMXZWVL"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

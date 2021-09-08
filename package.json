@@ -10,9 +10,17 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@dome9/components": "0.0.131-es7",
+    "@dome9/components": "^0.0.150",
+    "ag-grid-community": "^26.0.0",
+    "ag-grid-vue": "^26.0.0",
+    "ag-grid-vue3": "^26.0.0",
+    "express": "^4.17.1",
     "highcharts-vue": "^1.4.0",
-    "vue": "^3.0.5"
+    "open-in-editor": "^2.2.0",
+    "puppeteer-cluster": "^0.22.0",
+    "randomatic": "^3.1.1",
+    "vue": "^3.0.5",
+    "vue-property-decorator": "^8.5.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.3",
