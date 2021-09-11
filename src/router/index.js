@@ -1,11 +1,24 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
+import  Home from '../Home.vue'
+import  NotFound from '../NotFound.vue'
 
 import  LVECTTKXSF from '../mockups/LVECTTKXSF.vue';
 import  BQGGMLHHJX from '../mockups/BQGGMLHHJX.vue';
 import  NEILMXZWVL from '../mockups/NEILMXZWVL.vue';
 			
 const routes = [
+	{
+		path: "/",
+		name: "",
+		component: Home
+	},
+	{
+		path: "/:catchAll(.*)",
+		name: "",
+		component: NotFound
+	},
+
 	
 	{
 		path: "/LVECTTKXSF",
@@ -29,9 +42,7 @@ const router = createRouter({
     routes,
 } )
 
-router.beforeEach( ( toRoute, fromRoute, next ) => {
-    window.document.title = toRoute.meta && toRoute.fullPath ? toRoute.fullPath : 'Home';
-	
+router.beforeEach( ( toRoute, fromRoute, next ) => {	
 		window.addEventListener(
 			'message',
 			event => {

@@ -41,7 +41,7 @@ app.post( '/api/slide/create', ( request, response ) => {
 	slides.create( request );
 } );
 
-app.post( '/api/slide/editTS', ( request, response ) => {
+app.post( '/api/slide/editSFC', ( request, response ) => {
 	editor.open( `../mockups/${request.body.slideId}.vue` )
 		.then( function () {
 			console.log( `opening: ${request.body.slideId}.vue` );

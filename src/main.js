@@ -1,6 +1,14 @@
-import { createApp } from 'vue'
-import router from './router'
-import App from './App.vue'
-import './index.css'
+import { createApp } from 'vue';
+import router from './router';
+import App from './App.vue';
+import './index.css';
+import MyCounter from './components/MyCounter.vue';
 
-createApp( App ).use( router ).mount( '#app' )
+
+const app = createApp( App );
+
+app.component( 'my-counter', MyCounter )
+
+app.use( router)
+app.mount( '#app' )
+

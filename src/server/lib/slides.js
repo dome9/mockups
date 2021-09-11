@@ -19,6 +19,8 @@ module.exports = {
 		let slidesDataContent =
 			`
 import { createRouter, createWebHistory } from 'vue-router'
+import  Home from '../Home.vue'
+import  NotFound from '../NotFound.vue'
 ${slidesList.map( function ( component ) {
 				return `\nimport  ${component} from '../mockups/${component}.vue';`
 			} )
@@ -26,6 +28,17 @@ ${slidesList.map( function ( component ) {
 				.join( "" )}
 			
 const routes = [
+	{
+		path: "/",
+		name: "",
+		component: Home
+	},
+	{
+		path: "/:catchAll(.*)",
+		name: "",
+		component: NotFound
+	},
+
 	${slidesList.map( function ( component ) {
 		return`
 	{
@@ -41,14 +54,11 @@ const router = createRouter({
     routes,
 } )
 
-router.beforeEach( ( toRoute, fromRoute, next ) => {
-    window.document.title = toRoute.meta && toRoute.fullPath ? toRoute.fullPath : 'Home';
-	
+router.beforeEach( ( toRoute, fromRoute, next ) => {	
 		window.addEventListener(
 			'message',
 			event => {
 				if ( event.data.type === 'navigation' ) {
-					console.log('message')
 					router.push( event.data.route );
 				}
 			}

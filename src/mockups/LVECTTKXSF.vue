@@ -1,23 +1,26 @@
 <template>
-	<ag-grid-vue
-		style="width: 500px; height: 500px"
-		class="ag-theme-alpine"
-		:columnDefs="columnDefs"
-		:rowData="rowData"
-	>
-	</ag-grid-vue
->
+	<div class="absolute inset-0">
+		<ag-grid-vue
+			class="ag-theme-cp inset-0 absolute"
+			:columnDefs="columnDefs"
+			:rowData="rowData"
+			:rowHeight="rowHeight"
+		>
+		</ag-grid-vue>
+	</div>
 </template>
 
 <script>
-	import { AgGridVue } from 'ag-grid-vue3';
+import { AgGridVue } from 'ag-grid-vue3';
+import consts from '../consts'
 
 export default {
 	components: {
 		'ag-grid-vue': AgGridVue,
 	},
 	beforeMount() {
-		this.columnDefs = [{ field: 'make' }, { field: 'model' }, { field: 'price' }];
+		this.rowHeight = consts.ROW_HEIGHT;
+			this.columnDefs = [{ field: 'make' }, { field: 'model' }, { field: 'price' }];
 
 		this.rowData = [
 			{ make: 'Toyota', model: 'Celica', price: 35000 },

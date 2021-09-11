@@ -3,24 +3,20 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "repository": "https://github.com/dome9/berries",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "@dome9/components": "^0.0.150",
+    "@dome9/cp-icons": "github:dome9/cp-icons",
     "ag-grid-community": "^26.0.0",
-    "ag-grid-vue": "^26.0.0",
     "ag-grid-vue3": "^26.0.0",
     "express": "^4.17.1",
     "highcharts-vue": "^1.4.0",
     "open-in-editor": "^2.2.0",
     "puppeteer-cluster": "^0.22.0",
-    "randomatic": "^3.1.1",
-    "vue": "^3.0.5",
-    "vue-property-decorator": "^8.5.1"
+    "randomatic": "^3.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.3",
@@ -33,8 +29,10 @@
     "postcss-import": "^14.0.2",
     "postcss-mixins": "^8.1.0",
     "postcss-nesting": "^8.0.1",
+    "sass": "^1.39.2",
     "tailwindcss": "^2.2.2",
     "vite": "^2.3.7",
+    "vue": "^3.2.11",
     "vue-router": "^4.0.8"
   }
 }

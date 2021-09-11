@@ -4,6 +4,9 @@
             "id": "UYTUYTYTR",
             "name": "Vue Test",
             "domain": "http://localhost:3000",
+            "hasTS": false,
+            "hasHTML": false,
+            "hasSFC": true,
             "stories": [
                 {
                     "id": "VUTRSXGZJL",
